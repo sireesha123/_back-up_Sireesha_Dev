@@ -87,13 +87,11 @@ public class easyJetRegistration_page {
     @FindBy(linkText = "Hotels")
     private WebElement hotelslink;
 
-
     @FindBy(css = ".intro .button")
     private WebElement startButton;
 
     @FindBy(id = "Vrm")
     private WebElement registrationEntry;
-
 
     @FindBy(css = ".button")
     private WebElement continueButton;
@@ -116,14 +114,13 @@ public class easyJetRegistration_page {
         Password.sendKeys(password);
     }
 
-
     public void fillConfirmationPassword(String confirmPassword) {
         confirmpassword.sendKeys(confirmPassword);
     }
 
     public void enterTitle() {
         Select dropdown = new Select(titleDropdown);
-        dropdown.selectByValue("1");
+        dropdown.selectByValue("2");
     }
 
     public void enterFirstName(String firstName) {
