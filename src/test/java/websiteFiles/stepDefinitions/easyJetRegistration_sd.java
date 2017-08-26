@@ -139,8 +139,7 @@ public class easyJetRegistration_sd extends BasePage{
     public void iShouldSeeErrorMessageFor(String expectedErrorMessage, String flag) {
         EJR_page.verifyErrorMsg(expectedErrorMessage,flag);
     }
-
-
+    
     @And("^I enter below details:$")
     public void iEnterBelowDetails(List<String> personalDetails) {
         EJR_page.enterData(personalDetails);
@@ -155,12 +154,11 @@ public class easyJetRegistration_sd extends BasePage{
     @And("^I enter vehicle registration number from excel file$")
     public void iEnterVehicleRegistrationNumberFromExcelFile()  {
 
-
     }
 
     @Then("^I should see registration number, make, colour$")
     public void iShouldSeeRegistrationNumberMakeColour()  {
-        
+
     }
 }
 
