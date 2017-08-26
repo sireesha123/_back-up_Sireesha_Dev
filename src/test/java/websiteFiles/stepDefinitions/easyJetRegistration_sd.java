@@ -25,7 +25,6 @@ public class easyJetRegistration_sd extends BasePage{
 
    openDriver OD = new openDriver();
 
-
     @Given("^I enter the url \"([^\"]*)\"$")
     public void iEnterTheUrl(String url)  {
         openURL(url);
@@ -49,8 +48,8 @@ public class easyJetRegistration_sd extends BasePage{
     @And("^I fill in Password confirmation with \"([^\"]*)\"$")
     public void iFillInPasswordConfirmationWith(String confirmPassword)  {
          EJR_page.fillConfirmationPassword(confirmPassword);
+        System.out.println("github");
     }
-
 
     @And("^I select title Mrs from the drop down$")
     public void iSelectTitleMrsFromTheDropDown()  {
@@ -140,8 +139,7 @@ public class easyJetRegistration_sd extends BasePage{
     public void iShouldSeeErrorMessageFor(String expectedErrorMessage, String flag) {
         EJR_page.verifyErrorMsg(expectedErrorMessage,flag);
     }
-
-
+    
     @And("^I enter below details:$")
     public void iEnterBelowDetails(List<String> personalDetails) {
         EJR_page.enterData(personalDetails);
@@ -154,14 +152,13 @@ public class easyJetRegistration_sd extends BasePage{
     }
 
     @And("^I enter vehicle registration number from excel file$")
-    public void iEnterVehicleRegistrationNumberFromExcelFile() throws FileNotFoundException {
-
+    public void iEnterVehicleRegistrationNumberFromExcelFile()  {
 
     }
 
     @Then("^I should see registration number, make, colour$")
     public void iShouldSeeRegistrationNumberMakeColour()  {
-        EJR_page.
+
     }
 }
 
