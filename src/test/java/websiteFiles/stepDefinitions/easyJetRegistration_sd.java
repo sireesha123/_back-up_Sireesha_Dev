@@ -38,6 +38,7 @@ public class easyJetRegistration_sd extends BasePage{
     @And("^I fill in confirmation email address with \"([^\"]*)\"$")
     public void iFillInConfirmationEmailAddressWith(String confirmEmail) {
         EJR_page.fillConfirmationEmail(confirmEmail);
+        System.out.println(confirmEmail);
     }
 
     @And("^I fill in Password with \"([^\"]*)\"$")
@@ -54,6 +55,7 @@ public class easyJetRegistration_sd extends BasePage{
     @And("^I select title Mrs from the drop down$")
     public void iSelectTitleMrsFromTheDropDown()  {
         EJR_page.enterTitle();
+        System.out.println("siri");
     }
 
 
